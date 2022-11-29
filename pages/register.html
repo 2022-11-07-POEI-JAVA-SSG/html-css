@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>S'inscrire</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Accueil</a> |
+      <a href="about.html">A propos</a>
+      <a href="schedule.html">Horaire des cours</a>
+      <a href="register.html">S'inscrire</a>
+    </nav>
+    <h1>S'inscrire.</h1>
+
+    <!-- 
+        -nom
+        - prenom
+        - email
+        - genre
+        - numéro de téléphone
+        - Biographique
+        - Pays
+     -->
+    <form>
+      <div><label for="nom">Nom : </label> <input type="text" id="nom" /></div>
+      <div>
+        <label for="prenom">Prenom: </label> <input type="text" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email: </label> <input type="text" id="email" />
+      </div>
+      <div>
+        <label>Genre : </label>
+        <input value="f" type="radio" name="genre" />Feminin
+        <input value="m" type="radio" name="genre" />Masculin
+      </div>
+      <div>
+        <label for="phone">Numéro de téléphone: </label>
+        <input type="text" id="phone" placeholder="Ex : +33xxxxxxxxx" />
+      </div>
+      <div>
+        <label for="bio">Bio: </label>
+        <textarea
+          minlength="5"
+          maxlength="100"
+          rows="10"
+          cols="60"
+          id="bio"
+        ></textarea>
+      </div>
+      <div>
+        <label for="pays">Pays</label>
+        <select id="pays">
+          <option>-- Choisissez un pays --</option>
+          <option value="fr">France</option>
+          <option value="it">Italie</option>
+          <option value="ch">Chine</option>
+          <option value="jp">Japon</option>
+          <option value="be">Belgique</option>
+        </select>
+      </div>
+      <input type="submit" value="Valider" />
+    </form>
+  </body>
+</html>
